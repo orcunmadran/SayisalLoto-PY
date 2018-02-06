@@ -5,9 +5,8 @@ www.madran.net
 """
 from random import randint
 i = 0
-j = 0
 secilenler = [0,0,0,0,0,0]
-while j < 6:
+for rastgele in secilenler:
     while i < len(secilenler):
         secilen = randint(1, 49)
         if secilen not in secilenler:
@@ -15,4 +14,3 @@ while j < 6:
             i+=1
     print(sorted(secilenler))
     i=0
-    j+=1
